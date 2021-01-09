@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart'; 
-// import 'package:flutter_unity/flutter_unity.dart';
-// import 'package:http/http.dart' as http;
 import 'package:clothes_ar/models/shirt.dart'; 
+import 'package:clothes_ar/widgets/unity_ar.dart'; 
 
 class ShirtPreviewScreen extends StatefulWidget {
 
@@ -14,10 +13,10 @@ class ShirtPreviewScreen extends StatefulWidget {
 }
 
 class _ShirtPreviewScreenState extends State<ShirtPreviewScreen> {
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+    return UnityViewPage(entryID: widget.shirt.entryID);
   }
+
 }
