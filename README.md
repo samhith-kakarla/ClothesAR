@@ -1,1 +1,1 @@
-# ClothesAR
+# FitCheckAR
